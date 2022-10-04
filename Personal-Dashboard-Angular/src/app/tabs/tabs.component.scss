@@ -40,8 +40,33 @@
     width: 100%;
 
     background: rgba(violet, 0.5);
+    opacity: 0.9;
 
     border-radius: 10px;
-    background: linear-gradient(45deg, #f8b5a5, #e2d2fd);
+    
     z-index: -1;
+
+    transition: all 0.2s;
+
 }
+
+// Style background color of each tab tiles pseudo element
+.bookmarks-tab .tab-tile::before {
+  background: linear-gradient(45deg, #f8b5a5, #e2d2fd);
+}
+
+.todos-tab .tab-tile::before {
+  background: linear-gradient(45deg, #a2ffff, #ffbdde);
+}
+
+.notes-tab .tab-tile::before {
+  background: linear-gradient(45deg, #d2cdff, #5fffbc);
+}
+
+//Hover styling
+.tab-tile:hover::before {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+
