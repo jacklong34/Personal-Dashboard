@@ -19,7 +19,7 @@
     flex-grow: 1;
     align-items: center;
     justify-content: center;
-    // padding: 100px 0;
+    padding: 70px 0;
     h1 {
         font-size: 120px;
         font-weight: bold;
@@ -37,7 +37,8 @@
 .content-section {
     // background-color: cadetblue;
     //Styles to allow content section to fill all free space 
-    flex-grow: 4;
+    flex-grow: 1;
+    min-height: 0;
 }
 
 .bottom-section {
